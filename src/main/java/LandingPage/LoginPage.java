@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage {
 
@@ -16,13 +17,25 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//input[@name='email']")
-    private WebElement emailField;
+    public WebElement emailField;
 
     @FindBy (xpath = "//input[@name='password']")
-    private WebElement passField;
+    public WebElement passField;
+
+    @FindBy(className="checkbox__icon checkbox__icon--light")
+    public WebElement rememberMeCheckbox;
 
     @FindBy (xpath = "//button[@ng-click]")
-    private WebElement logInButton;
+    public WebElement logInButton;
+
+    @FindBy (css = "div[ng-if=\"hasError\"]>div>span[class=\"ng-scope\"]")
+    public WebElement errorMsgIncorrectLoginOrPassword;
+
+    @FindBy (css = "translate[translate-comment=\"Located under the email field when email blank\"]>span")
+    public WebElement errorMsgInCaseEmptyEmailField;
+
+    @FindBy (css = "translate[translate-comment=\"Located under the password field when password blank\"]>span")
+    public WebElement errorMsgInCaseEmptyPasswordField;
 
     public void clearAllLoginFields(){
         emailField.clear();

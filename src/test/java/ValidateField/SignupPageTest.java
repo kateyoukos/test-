@@ -7,6 +7,8 @@ import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class SignupPageTest {
@@ -41,27 +43,32 @@ public class SignupPageTest {
 
     @Test
     public void positiveRegisterTest() {
-            headerComponent.signUp.click();
-            signUppPage.firstName.sendKeys("Ira");
-            signUppPage.lastName.sendKeys("Bilet");
-            signUppPage.emailField.sendKeys("iryna+31@psyquation.com");
-            signUppPage.passwordField.sendKeys("test123");
-            signUppPage.checkbox.click();
-            signUppPage.signUpButton.click();
+        //fill in email field
+        Random random = new Random();
+        String randomEmail = "iryna+".concat(String.valueOf(random.nextInt(1000)).concat("@psyquation.com")) ;
 
-            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-            newAccPage.welcomeToPsyQuation.isDisplayed();
+        headerComponent.signUp.click();
+        signUppPage.firstName.sendKeys("Ira");
+        signUppPage.lastName.sendKeys("Bilet");
+        signUppPage.emailField.sendKeys(randomEmail);
+        signUppPage.passwordField.sendKeys("test123");
+        signUppPage.checkbox.click();
+        signUppPage.signUpButton.click();
+
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        newAccPage.welcomeToPsyQuation.isDisplayed();//
+        //
     }
 
     @Test
     public void  emailIsAlreadyRegisteredTest() {
-            headerComponent.signUp.click();
-            signUppPage.firstName.sendKeys("Ira");
-            signUppPage.lastName.sendKeys("Bilet");
-            signUppPage.emailField.sendKeys("iryna@psyquation.com");
-            signUppPage.passwordField.sendKeys("test123");
-            signUppPage.checkbox.click();
-            signUppPage.signUpButton.click();
+        headerComponent.signUp.click();
+        signUppPage.firstName.sendKeys("Ira");
+        signUppPage.lastName.sendKeys("Bilet");
+        signUppPage.emailField.sendKeys("iryna@psyquation.com");
+        signUppPage.passwordField.sendKeys("test123");
+        signUppPage.checkbox.click();
+        signUppPage.signUpButton.click();
 
                    Assert.assertEquals("client with this email already exists.",
                            driver.findElement(By.xpath("//div[@aria-hidden=\"false\"]")).getText());
