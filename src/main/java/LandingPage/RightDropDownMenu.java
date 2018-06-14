@@ -13,7 +13,7 @@ public class RightDropDownMenu {
         this.driver = driver;
     }
 
-    @FindBy(css="img[ng-if=\"currentAccount.logo\"]")
+    @FindBy(css="div[ng-if=\"!currentAccount.logo\"]")
     public WebElement accountLogo;
 
     @FindBy(css="[ng-click=\"toggleDropdown($event)\"]")

@@ -28,12 +28,13 @@ public class AddingAccounts {
     public static AccountConnectionInProgress accountConnectionInProgress;
     public static LandingPage.LoginPage login;
     public static HeaderComponent headerLogOutContainer;
+    public static LoginPageTest loginPageTest;
 
     @BeforeClass
     public static void setup(){
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 20);
-        driver.get("http://psyquation.com/");
+        driver.get("https://psyquation.com/app/#!/en/auth/login");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         headerLogOutContainer = new HeaderComponent(driver);
@@ -43,15 +44,8 @@ public class AddingAccounts {
         addingTradingAccountPage = new AddingTradingAccountPage(driver);
         addAccountPQTPage = new AddAccountPQTPage(driver);
         accountConnectionInProgress = new AccountConnectionInProgress(driver);
-        }
-
-    public void authorizationSuccessful(){
-        headerLogOutContainer.signIn.click();
-        login.emailField.sendKeys("kate@psyquation.com");
-        login.passField.sendKeys("159753k");
-        login.logInButton.click();
-        wait.until(ExpectedConditions.invisibilityOf(login.logInButton));
-
+        loginPageTest = new LoginPageTest();
+        authorizationSuccessful();
     }
 
     /*@After
@@ -61,14 +55,23 @@ public class AddingAccounts {
 
     public void openMyAccountsPage(){
         rightDropDownMenu.accountDropDownMenu.click();
+        wait.until(ExpectedConditions.elementToBeClickable(rightDropDownMenu.ManageAccountsItem));
         rightDropDownMenu.ManageAccountsItem.click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
     }
 
-    @Test
+    public static void authorizationSuccessful(){
+        //headerLogOutContainer.signIn.click();
+        driver.get("https://psyquation.com/app/#!/en/auth/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
+        login.emailField.sendKeys("kate@psyquation.com");
+        login.passField.sendKeys("159753k");
+        login.logInButton.click();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        rightDropDownMenu.accountLogo.isDisplayed();
+    }
+
     public void addNewAccountPQTSuccessfull(){
-        authorizationSuccessful();
         openMyAccountsPage();
         wait.until(ExpectedConditions.elementToBeClickable(myAccountsPage.addNewAccountButton));
         myAccountsPage.addNewAccountButton.click();
@@ -98,8 +101,75 @@ public class AddingAccounts {
             accNumbers.add(element.getText());
         }
         assert(accNumbers.contains("#PQT0"+addAccountPQTPage.accountPQT));
-        }
+    }
 
+    @Test
+    public void addNewAccountPQTemptyForm() {
+        openMyAccountsPage();
+        wait.until(ExpectedConditions.elementToBeClickable(myAccountsPage.addNewAccountButton));
+        myAccountsPage.addNewAccountButton.click();
+        wait.until(ExpectedConditions.elementToBeClickable(addingTradingAccountPage.existingMT4button));
+        addingTradingAccountPage.existingMT4button.click();
+
+        wait.until(ExpectedConditions.visibilityOf(addAccountPQTPage.accountNumberInputField));
+        addAccountPQTPage.addAccountButton.click();
+
+        String errorTextEng = "This field is required.";
+        Assert.assertEquals(errorTextEng, addAccountPQTPage.errorMsgUnderAccNumberField.getAttribute("innerText"));
+        Assert.assertEquals(errorTextEng, addAccountPQTPage.errorMsgUnderAccPasswordField.getAttribute("innerText"));
+        Assert.assertEquals(errorTextEng, addAccountPQTPage.errorMsgUnderServerIPField.getAttribute("innerText"));
+    }
+
+    @Test
+    public void addNewAccountPQTwrongIPAddress() {
+        openMyAccountsPage();
+        wait.until(ExpectedConditions.elementToBeClickable(myAccountsPage.addNewAccountButton));
+        myAccountsPage.addNewAccountButton.click();
+        wait.until(ExpectedConditions.elementToBeClickable(addingTradingAccountPage.existingMT4button));
+        addingTradingAccountPage.existingMT4button.click();
+
+        wait.until(ExpectedConditions.visibilityOf(addAccountPQTPage.accountNumberInputField));
+        //fill PQT adding form
+
+        addAccountPQTPage.accountNumberInputField.click();
+        addAccountPQTPage.accountNumberInputField.sendKeys(addAccountPQTPage.accountPQT);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+        addAccountPQTPage.investorPasswordInputField.click();
+        addAccountPQTPage.investorPasswordInputField.sendKeys(addAccountPQTPage.passwordPQT);
+        //addAccountPQTPage.serverInputField.click();
+        addAccountPQTPage.serverInputField.sendKeys(addAccountPQTPage.serverPQTinvalid);
+        addAccountPQTPage.addAccountButton.click();
+
+        String errorTextEng = "Wrong server address, should be host:port";
+        Assert.assertEquals(errorTextEng, addAccountPQTPage.errorMsgInTheTop.getAttribute("innerText"));
+        wait.until(ExpectedConditions.invisibilityOf(addAccountPQTPage.errorMsgInTheTop));
+    }
+
+    @Test
+    public void addNewAccountPQTwrongCredentials() {
+        openMyAccountsPage();
+        wait.until(ExpectedConditions.elementToBeClickable(myAccountsPage.addNewAccountButton));
+        myAccountsPage.addNewAccountButton.click();
+        wait.until(ExpectedConditions.elementToBeClickable(addingTradingAccountPage.existingMT4button));
+        addingTradingAccountPage.existingMT4button.click();
+
+        wait.until(ExpectedConditions.visibilityOf(addAccountPQTPage.accountNumberInputField));
+        //fill PQT adding form
+        addAccountPQTPage.accountNumberInputField.click();
+        addAccountPQTPage.accountNumberInputField.sendKeys(addAccountPQTPage.accountPQT);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+        addAccountPQTPage.investorPasswordInputField.click();
+        addAccountPQTPage.investorPasswordInputField.sendKeys(addAccountPQTPage.passwordPQTincorrect);
+        //addAccountPQTPage.serverInputField.click();
+        addAccountPQTPage.serverInputField.sendKeys(addAccountPQTPage.serverPQT);
+        addAccountPQTPage.addAccountButton.click();
+
+        String errorTextEng = "Wrong credentials";
+        Assert.assertEquals(errorTextEng, addAccountPQTPage.errorMsgInTheTop.getAttribute("innerText"));
+        wait.until(ExpectedConditions.invisibilityOf(addAccountPQTPage.errorMsgInTheTop));
+    }
 
 
 }
