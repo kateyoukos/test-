@@ -14,63 +14,29 @@ public class HeaderComponent {
         this.driver = driver;
     }
 
-    @FindBy (css = "a.header__brand")
+    @FindBy (id = "header-home")
     public WebElement logo;
 
-    @FindBy (xpath = "//div[@class = 'header__nav-item dd-toggle']/span/span[text()='For Traders']")
-    public WebElement forTraders;
+    @FindBy (id = "header-trader")
+    public WebElement trader;
 
-    @FindBy (xpath = "//span[text()='For Traders']/following::i")
-    public WebElement iconDropDown;
+    @FindBy (id = "header-investor")
+    public WebElement investor;
 
-        @FindBy(xpath = "//div[@class='header__nav-item-menu']/a/span[text()='Platform Overview']")
-        public WebElement platformOverview;
+    @FindBy (css = "[id=\"header-about\"]>div")
+    public WebElement about;
 
-        @FindBy(xpath = "//span[text()='Signup']")
-        public WebElement signUp;
+    @FindBy (css = "[id=\"header-community\"]>div")
+    public WebElement community;
 
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Allocations']")
-        public WebElement allocations;
+    @FindBy (id = "header-login")
+    public WebElement login;
 
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='About us']")
-        public WebElement aboutUs;
+    @FindBy (id = "header-sign_up")
+    public WebElement signUp;
 
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Why Us']")
-        public WebElement whyUs;
+    @FindBy (id = "header-dashboard")
+    public WebElement dashboard;
 
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Testimonials']")
-        public WebElement testimonials;
 
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Connection Process']")
-        public WebElement connectionProcess;
-
-        @FindBy (xpath = "//a[@class = 'header__nav-item']/span/span[text()='For Allocators']")
-        public WebElement forAllocators;
-
-        @FindBy (xpath = "//div[@class = 'header__nav-item']/span/span[text()='Community']")
-        public WebElement community;
-
-        @FindBy(xpath = "//a[@class = 'header__nav-item-menu-item']/span[text()='Leaderboard']")
-        public WebElement leaderBoard;
-
-        @FindBy(xpath = "//a[@class = 'header__nav-item-menu-item']/span[text()='Blog']")
-        public WebElement blog;
-
-        @FindBy (xpath = "//div[@class = 'header__nav-item']/span/span[text()='Support']")
-        public WebElement support;
-
-        @FindBy(xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Knowledge Base']")
-        public WebElement knowledgeBase;
-
-        @FindBy (xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Video Tutorials']")
-        public WebElement videoTutorials;
-
-        @FindBy (xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='Contact Us']")
-        public WebElement contactUs;
-
-        @FindBy (xpath = "//div[@class = 'header__nav-item-menu']/a/span[text()='F.A.Q.']")
-        public WebElement fAq;
-
-        @FindBy (xpath = "//a[@ui-sref='auth.login']")
-        public WebElement signIn;
 }
