@@ -30,7 +30,7 @@ public class InvestorFormTest {
     }*/
 
 
-    /*@Test
+    @Test
     public void investorFormSuccessful(){
         driver.navigate().refresh();
         new Actions(driver).moveToElement(investorPage.firstNameInputField).perform();
@@ -41,7 +41,7 @@ public class InvestorFormTest {
         investorPage.phoneInputField.sendKeys(investorPage.phoneValid);
         investorPage.agreelegalCheckbox.click();
         investorPage.submitButton.click();
-    }*/
+    }
 
     @Test
     public void investorFormEmptySubmitButtonIsDisabled(){
