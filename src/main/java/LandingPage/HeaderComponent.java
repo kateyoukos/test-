@@ -26,8 +26,32 @@ public class HeaderComponent {
     @FindBy (css = "[id=\"header-about\"]>div")
     public WebElement about;
 
+    @FindBy (css = "[id=\"header-why_us\"]")
+    public WebElement whyUs;
+
+    @FindBy (css = "[id=\"header-faq\"]")
+    public WebElement faq;
+
+    @FindBy (css = "[id=\"header-contact_us\"]")
+    public WebElement contactUs;
+
+    @FindBy (css = "[id=\"header-knowledge_base\"]")
+    public WebElement knowledgeBase;
+
+    @FindBy (css = "[id=\"header-blog\"]")
+    public WebElement blog;
+
     @FindBy (css = "[id=\"header-community\"]>div")
     public WebElement community;
+
+    @FindBy (id = "header-leaderboard")
+    public WebElement leaderboard;
+
+    @FindBy (id = "header-incubation_program")
+    public WebElement incubationProgram;
+
+    @FindBy (id = "header-connection_process")
+    public WebElement connectionProcess;
 
     @FindBy (id = "header-login")
     public WebElement login;

@@ -20,7 +20,8 @@ public class LoginPageTest {
         headerLogOutContainer = new HeaderComponent(driver);
         login = new LandingPage.LoginPage(driver);
         rightDropDownMenu = new RightDropDownMenu(driver);
-        driver.get("http://psyquation.com/");
+        //driver.get("http://psyquation.com/en");
+        driver.get("pq:test@stg.psyquation.com/en");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -32,7 +33,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationSuccessful(){
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.emailField.sendKeys("kate@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
@@ -43,7 +44,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationSuccessfulWithlogout(){
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.emailField.sendKeys("kate@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
@@ -56,7 +57,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationEmailIsNotRegistered() {
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.emailField.sendKeys("ka@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
@@ -70,7 +71,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationEmptyForm(){
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.logInButton.click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         login.logInButton.getAttribute("disabled");
@@ -78,7 +79,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationEmptyEmailField(){
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.passField.sendKeys("159753k");
         login.logInButton.click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -89,7 +90,7 @@ public class LoginPageTest {
 
     @Test
     public void authorizationEmptyPasswordField(){
-        headerLogOutContainer.signIn.click();
+        headerLogOutContainer.login.click();
         login.emailField.sendKeys("kate@psyquation.com");
         login.logInButton.click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
