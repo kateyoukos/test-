@@ -24,6 +24,11 @@ public class FooterComponents {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
+    /*@After
+    public static void afterTest() {
+        driver.quit();
+    }*/
+
     @Test
     public void checkLogoFooterIsDisplayed() {
         Assert.assertTrue(footerComponent.logo.isDisplayed());
