@@ -1,6 +1,7 @@
 package ValidateField;
 
 import LandingPage.InvestorPage;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -29,8 +30,9 @@ public class InvestorFormTest {
     }*/
 
 
-    @Test
+    /*@Test
     public void investorFormSuccessful(){
+        driver.navigate().refresh();
         new Actions(driver).moveToElement(investorPage.firstNameInputField).perform();
         investorPage.firstNameInputField.sendKeys(investorPage.firstNameValid);
         investorPage.lastNameInputField.sendKeys(investorPage.lastNameValid);
@@ -39,6 +41,13 @@ public class InvestorFormTest {
         investorPage.phoneInputField.sendKeys(investorPage.phoneValid);
         investorPage.agreelegalCheckbox.click();
         investorPage.submitButton.click();
-    }
+    }*/
+
+    @Test
+    public void investorFormEmptySubmitButtonIsDisabled(){
+        driver.navigate().refresh();
+        new Actions(driver).moveToElement(investorPage.firstNameInputField).perform();
+        Assert.assertEquals("true", investorPage.submitButton.getAttribute("disabled"));
+        }
 
 }
