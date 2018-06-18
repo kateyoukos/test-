@@ -110,4 +110,7 @@ public class HeaderComponents {
         Assert.assertEquals(signUpLinkTextENG, headerComponent.signUp.getAttribute("innerText"));
     }
 
+
+
+
 }

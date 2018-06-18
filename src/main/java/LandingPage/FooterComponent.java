@@ -1,12 +1,20 @@
 package LandingPage;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class FooterComponent {
+    public WebDriver driver;
+
+    public FooterComponent(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+        this.driver = driver;
+    }
 
     @FindBy(css = "a[id=\"footer-home\"]>img")
-    public WebElement footerLogo;
+    public WebElement logo;
 
     @FindBy(css = "a[id=\"footer-home\"][class]")
     public WebElement homeLink;
@@ -69,7 +77,7 @@ public class FooterComponent {
     public WebElement twitterIcon;
 
     @FindBy(id = "footer-social-linkedin")
-    public WebElement lenkedInIcon;
+    public WebElement linkedInIcon;
 
     @FindBy(id = "footer-social-youtube")
     public WebElement youtubeIcon;
