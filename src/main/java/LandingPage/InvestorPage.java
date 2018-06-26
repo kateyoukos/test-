@@ -9,7 +9,8 @@ public class InvestorPage {
     public WebDriver driver;
     public String firstNameValid = "Ivan";
     public String lastNameValid = "Lorem";
-    public String emailValid = "kate@psyquation.com";
+    public String emailValid = "test@psyquation.com";
+    public String emailInvalid = "kate@psyquation.com";
     public String phoneValid = "123456111";
 
 

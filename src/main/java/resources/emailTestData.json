@@ -1,0 +1,76 @@
+[
+{
+
+"email": "testsyquation.com",
+  "errorMsgENG": "Email is no valid"
+},
+  {
+    "email": "@psyquation.com",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "test@",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "@",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "test@psy  quation.com",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "test@@psyquation.com",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": ".test@psyquation.com",
+    "errorMsgENG": "Enter a valid email address."
+  },
+  {
+    "email": "!test@psyquation.com",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "test@psyquationcom",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "test@psyquation..com",
+    "errorMsgENG": "Enter a valid email address."
+  },
+  {
+    "email": "t@psyquation.com",
+    "errorMsgENG": "Unknown email"
+  },
+  {
+    "email": "<style type=\"text/javascript\">alert(‘error’);</style>",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "<body background=\"javascript:alert(‘error’)\" >",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "<script>alert(\"cookie: \"+document.cookie)</script>",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "\"><script>alert(\"cookie: \"+document.cookie)</script>",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "‘><''>\"><script>alert(\"cookie: \"+document.cookie)</script>",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "<body onload=alert(‘xss error’)>",
+    "errorMsgENG": "Email is no valid"
+  },
+  {
+    "email": "<img src=javascript:alert(‘error’)>",
+    "errorMsgENG": "Email is no valid"
+  }
+
+]
