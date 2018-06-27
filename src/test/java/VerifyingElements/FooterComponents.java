@@ -17,8 +17,7 @@ public class FooterComponents {
     @BeforeClass
     public static void setup(){
         driver = new ChromeDriver();
-        //driver.get("http://psyquation.com/en");
-        driver.get("http://pq:test@stg.psyquation.com/en");
+        driver.get("http://psyquation.com/en");
         driver.manage().window().maximize();
         footerComponent = new LandingPage.FooterComponent(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

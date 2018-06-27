@@ -2,33 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc8672d5-3457-46cc-8055-2a180d7a6cb1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LandingPage/Error404Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CheckPagesOn404/CheckPageStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_tulskiy_jkeymaster_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vidstige_jadb__v1_0_g94ebf38_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_tools_dx_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_melloware_jintellitype_1_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_nativelibs4java_bridj_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sikulix_sikulix2tigervnc_2_0_0_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sikulix_sikulixapi_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sikulix_sikulixlibsmac_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_nop_1_7_25.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PsyQuation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PsyQuation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidateField/SignupPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidateField/SignupPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LandingPage/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LandingPage/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ValidateField/LoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ValidateField/LoginPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ValidateField/SignupPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ValidateField/SignupPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/VerifyingElements/FooterComponents.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/VerifyingElements/FooterComponents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/VerifyingElements/HeaderComponents.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/VerifyingElements/HeaderComponents.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResetPassword.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/ResetPassword.java">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="64" column="76" selection-start-line="63" selection-start-column="22" selection-end-line="64" selection-end-column="76" />
+            <state relative-caret-position="375">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPageTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,20 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailTestData.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/emailTestData.json">
+      <file leaf-file-name="MyAccountsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/MyAccountsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            <state relative-caret-position="60">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FooterComponents.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java">
+      <file leaf-file-name="ResetPasswordPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/ResetPasswordPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="40" column="5" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,26 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckPageStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CheckPagesOn404/CheckPageStatus.java">
+      <file leaf-file-name="RightDropDownMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Error404Page.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/Error404Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -106,38 +85,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FooterComponent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/FooterComponent.java">
+      <file leaf-file-name="WelcomeToPsyPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/WelcomeToPsyPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="58" column="41" selection-start-line="57" selection-start-column="4" selection-end-line="58" selection-end-column="41" />
+            <state relative-caret-position="225">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddingTradingAccountPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/AddingTradingAccountPage.java">
+      <file leaf-file-name="HeaderComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HeaderComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="795">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landingPagesList.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/landingPagesList.json">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="InvestorPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/InvestorPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+            <state relative-caret-position="405">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -166,17 +148,12 @@
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/AddAccountPQTPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/AccountConnectionInProgress.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/AddingTradingAccountPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/MyAccountsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/SignUppPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/WelcomeToPsyPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ValidateField/test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/HeaderComponent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/FooterComponent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java" />
         <option value="$PROJECT_DIR$/src/test/java/ValidateField/InvestorForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/InvestorPage.java" />
@@ -189,6 +166,12 @@
         <option value="$PROJECT_DIR$/src/main/java/LandingPage/Error404Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/CheckPagesOn404/CheckPageStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/landingPagesList.json" />
+        <option value="$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java" />
+        <option value="$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ValidateField/SignupPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java" />
       </list>
     </option>
   </component>
@@ -206,10 +189,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="456" />
-    <option name="y" value="44" />
-    <option name="width" value="982" />
-    <option name="height" value="769" />
+    <option name="x" value="280" />
+    <option name="y" value="135" />
+    <option name="width" value="1117" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,7 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,7 +284,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,32 +312,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckPageStatus">
+  <component name="RunManager" selected="JUnit.LoginPageTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="CheckPageStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PsyQuation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CheckPagesOn404.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="CheckPagesOn404" />
-      <option name="MAIN_CLASS_NAME" value="CheckPagesOn404.CheckPageStatus" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="FooterComponents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PsyQuation" />
@@ -379,30 +339,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="HeaderComponents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PsyQuation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="VerifyingElements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="VerifyingElements" />
-      <option name="MAIN_CLASS_NAME" value="VerifyingElements.HeaderComponents" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="InvestorFormTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PsyQuation" />
       <extension name="coverage">
         <pattern>
@@ -413,7 +350,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ValidateField" />
-      <option name="MAIN_CLASS_NAME" value="ValidateField.InvestorFormTest" />
+      <option name="MAIN_CLASS_NAME" value="ValidateField.LoginPageTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -439,6 +376,52 @@
       <option name="MAIN_CLASS_NAME" value="ValidateField.ResetPassword" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SignupPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PsyQuation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ValidateField.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ValidateField" />
+      <option name="MAIN_CLASS_NAME" value="ValidateField.SignupPageTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="VerifyingElements in PsyQuation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PsyQuation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="VerifyingElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="VerifyingElements" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -487,19 +470,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.HeaderComponents" />
       <item itemvalue="JUnit.FooterComponents" />
-      <item itemvalue="JUnit.InvestorFormTest" />
       <item itemvalue="JUnit.ResetPassword" />
-      <item itemvalue="JUnit.CheckPageStatus" />
+      <item itemvalue="JUnit.VerifyingElements in PsyQuation" />
+      <item itemvalue="JUnit.SignupPageTest" />
+      <item itemvalue="JUnit.LoginPageTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckPageStatus" />
+        <item itemvalue="JUnit.LoginPageTest" />
+        <item itemvalue="JUnit.SignupPageTest" />
         <item itemvalue="JUnit.ResetPassword" />
-        <item itemvalue="JUnit.InvestorFormTest" />
+        <item itemvalue="JUnit.VerifyingElements in PsyQuation" />
         <item itemvalue="JUnit.FooterComponents" />
-        <item itemvalue="JUnit.HeaderComponents" />
       </list>
     </recent_temporary>
   </component>
@@ -542,52 +525,57 @@
       <workItem from="1530015838515" duration="496000" />
       <workItem from="1530021545295" duration="1858000" />
       <workItem from="1530023465435" duration="1831000" />
-      <workItem from="1530025361405" duration="1571000" />
+      <workItem from="1530025361405" duration="1724000" />
+      <workItem from="1530087587654" duration="1100000" />
+      <workItem from="1530102254438" duration="2042000" />
+      <workItem from="1530104552708" duration="1035000" />
+      <workItem from="1530108281777" duration="1504000" />
+      <workItem from="1530110185475" duration="635000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckPageStatus - 2018.06.26 at 17h 49m 11s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 16h 04m 08s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 17h 51m 33s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 14m 30s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 04m 24s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 25m 21s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 09m 57s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 27m 12s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 12m 35s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 29m 04s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 13m 47s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 33m 55s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 16m 25s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 42m 30s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 21m 07s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 47m 36s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 25m 53s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 49m 08s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckPageStatus - 2018.06.26 at 18h 30m 19s.xml">
-      <configuration name="CheckPageStatus" configurationId="JUnit" />
+    <history-entry file="LoginPageTest - 2018.06.27 at 17h 50m 54s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33117000" />
+    <option name="totallyTimeSpent" value="39586000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="456" y="44" width="982" height="769" extended-state="0" />
+    <frame x="479" y="142" width="918" height="683" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3294964" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32840723" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -595,11 +583,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33956835" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38752052" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27800408" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29738563" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -764,85 +752,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/CheckFooterElements.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/CheckHeaderElements.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/AddAccountPQTPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/AccountConnectionInProgress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/MyAccountsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/WelcomeToPsyPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/Footer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HeaderComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/InvestorPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/SignupPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/InvestorFormTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="60" column="88" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -866,33 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/ResetPasswordPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/emailTestData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -908,13 +796,68 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/landingPages.json" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/landingPagesList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="40" column="5" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/HeaderComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/SignupPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CheckPagesOn404/CheckPageStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VerifyingElements/FooterComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1546">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/ResetPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/AccountConnectionInProgress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/AddAccountPQTPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -922,30 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/FooterComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="58" column="41" selection-start-line="57" selection-start-column="4" selection-end-line="58" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/SignUppPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/ResetPassword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="64" column="76" selection-start-line="63" selection-start-column="22" selection-end-line="64" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,20 +878,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CheckPagesOn404/CheckPageStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/FooterComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="-38">
+          <caret line="58" column="41" selection-start-line="57" selection-start-column="4" selection-end-line="58" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HeaderComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/landingPagesList.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/InvestorPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="405">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/MyAccountsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/ResetPasswordPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/SignUppPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/WelcomeToPsyPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LandingPage/RightDropDownMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ValidateField/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

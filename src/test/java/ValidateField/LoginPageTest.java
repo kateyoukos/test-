@@ -2,14 +2,19 @@ package ValidateField;
 
 import LandingPage.RightDropDownMenu;
 import LandingPage.HeaderComponent;
+import groovy.transform.ToString;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.concurrent.TimeUnit;
 
 public class LoginPageTest {
 
     public static WebDriver driver;
+    public static WebDriverWait wait;
     public static LandingPage.LoginPage login;
     public static HeaderComponent headerLogOutContainer;
     public static RightDropDownMenu rightDropDownMenu;
@@ -17,11 +22,10 @@ public class LoginPageTest {
     @BeforeClass
     public static void setup(){
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 30);
         headerLogOutContainer = new HeaderComponent(driver);
         login = new LandingPage.LoginPage(driver);
         rightDropDownMenu = new RightDropDownMenu(driver);
-        //driver.get("http://psyquation.com/en");
-        driver.get("pq:test@stg.psyquation.com/en");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -31,25 +35,22 @@ public class LoginPageTest {
         driver.quit();
     }*/
 
-    @Test
     public void authorizationSuccessful(){
-        headerLogOutContainer.login.click();
+        driver.get("https://psyquation.com/en/login");
         login.emailField.sendKeys("kate@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        rightDropDownMenu.accountLogo.isDisplayed();
-
+        wait.until(ExpectedConditions.visibilityOf(rightDropDownMenu.accountLogo));
     }
 
     @Test
     public void authorizationSuccessfulWithlogout(){
-        headerLogOutContainer.login.click();
+        driver.get("https://psyquation.com/en/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
         login.emailField.sendKeys("kate@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        rightDropDownMenu.accountLogo.isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(rightDropDownMenu.accountLogo));
         rightDropDownMenu.accountDropDownMenu.click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         rightDropDownMenu.logOutButton.click();
@@ -57,48 +58,50 @@ public class LoginPageTest {
 
     @Test
     public void authorizationEmailIsNotRegistered() {
-        headerLogOutContainer.login.click();
+        driver.get("https://psyquation.com/en/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
         login.emailField.sendKeys("ka@psyquation.com");
         login.passField.sendKeys("159753k");
         login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        //login.errorMsgIncorrectLoginOrPassword.getAttribute("innerText");
         String errorTextEng = "Incorrect login or password. Try again.";
         Assert.assertEquals(errorTextEng, login.errorMsgIncorrectLoginOrPassword.getAttribute("innerText"));
-        login.clearAllLoginFields();
+        clearAllLoginFields();
         }
 
 
     @Test
     public void authorizationEmptyForm(){
-        headerLogOutContainer.login.click();
-        login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        login.logInButton.getAttribute("disabled");
+        driver.get("https://psyquation.com/en/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
+        String buttonStatus = login.logInButton.getAttribute("disabled");
+        Assert.assertEquals("true", login.logInButton.getAttribute("disabled"));
     }
 
     @Test
     public void authorizationEmptyEmailField(){
-        headerLogOutContainer.login.click();
+        driver.get("https://psyquation.com/en/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
         login.passField.sendKeys("159753k");
         login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        String errorTextEng = "This field is required.";
+        String errorTextEng = "Required";
         Assert.assertEquals(errorTextEng, login.errorMsgInCaseEmptyEmailField.getAttribute("innerText"));
-        login.clearAllLoginFields();
+        clearAllLoginFields();
     }
 
     @Test
     public void authorizationEmptyPasswordField(){
-        headerLogOutContainer.login.click();
+        driver.get("https://psyquation.com/en/login");
+        wait.until(ExpectedConditions.visibilityOf(login.emailField));
         login.emailField.sendKeys("kate@psyquation.com");
         login.logInButton.click();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-        String errorTextEng = "This field is required.";
-        System.out.println(login.errorMsgInCaseEmptyPasswordField.getAttribute("innerText"));
+        String errorTextEng = "Required";
         Assert.assertEquals(errorTextEng, login.errorMsgInCaseEmptyPasswordField.getAttribute("innerText"));
-        login.clearAllLoginFields();
+        clearAllLoginFields();
+    }
+
+    public void clearAllLoginFields(){
+        login.emailField.clear();
+        login.passField.clear();
     }
 
 

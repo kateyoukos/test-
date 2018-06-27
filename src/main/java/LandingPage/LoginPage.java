@@ -25,16 +25,16 @@ public class LoginPage {
     @FindBy(className="checkbox__icon checkbox__icon--light")
     public WebElement rememberMeCheckbox;
 
-    @FindBy (xpath = "//button[@ng-click]")
+    @FindBy (css = "button[id=\"investor-formSubmit-button\"]")
     public WebElement logInButton;
 
-    @FindBy (css = "div[ng-if=\"hasError\"]>div>span[class=\"ng-scope\"]")
+    @FindBy (css = "label[for=\"password\"]+div+p")
     public WebElement errorMsgIncorrectLoginOrPassword;
 
-    @FindBy (css = "translate[translate-comment=\"Located under the email field when email blank\"]>span")
+    @FindBy (css = "input[id=\"email\"]+p")
     public WebElement errorMsgInCaseEmptyEmailField;
 
-    @FindBy (css = "translate[translate-comment=\"Located under the password field when password blank\"]>span")
+    @FindBy (css = "label[for=\"password\"]+div+p")
     public WebElement errorMsgInCaseEmptyPasswordField;
 
     public void clearAllLoginFields(){

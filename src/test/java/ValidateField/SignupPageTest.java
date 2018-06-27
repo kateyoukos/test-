@@ -24,7 +24,6 @@ public class SignupPageTest {
         headerComponent = new HeaderComponent(driver);
         signUppPage = new SignUppPage(driver);
         newAccPage = new WelcomeToPsyPage(driver);
-
         driver.get("https://psyquation.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
