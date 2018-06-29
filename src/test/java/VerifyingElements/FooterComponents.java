@@ -1,9 +1,7 @@
 package VerifyingElements;
 
 import LandingPage.FooterComponent;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,10 +21,10 @@ public class FooterComponents {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    /*@After
-    public static void afterTest() {
+    @AfterClass
+    public static void driverGuit() {
         driver.quit();
-    }*/
+    }
 
     @Test
     public void checkLogoFooterIsDisplayed() {

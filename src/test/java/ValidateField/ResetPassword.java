@@ -7,9 +7,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,15 +33,16 @@ public class ResetPassword {
         wait = new WebDriverWait(driver, 20);
         resetPassword = new ResetPasswordPage(driver);
         driver.get("https://psyquation.com/en/reset-password");
+        wait.until(ExpectedConditions.visibilityOf(resetPassword.emailInputField));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 
-    /*@After
-    public static void afterTest() {
+    @AfterClass
+    public static void driverGuit() {
         driver.quit();
-    }*/
+    }
 
     @Test
     public void resetPswInvalidEmail() throws FileNotFoundException {
@@ -60,7 +59,6 @@ public class ResetPassword {
                 wait.until(ExpectedConditions.visibilityOf(resetPassword.errorMsg));
                 try{
                     Assert.assertEquals(errMsg, resetPassword.errorMsg.getText());
-                    System.out.println("Test with data "+email+" completed.");
                 }catch(AssertionError e){
                     System.out.println("Assertion error with data "+ email);
                 }
@@ -69,18 +67,11 @@ public class ResetPassword {
             }
         }
         catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
-
-
-
-}
-
+    }
 }

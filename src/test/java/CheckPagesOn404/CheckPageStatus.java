@@ -7,9 +7,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,10 +34,11 @@ public class CheckPageStatus {
         error404Page = new Error404Page(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-    /*@After
-    public static void afterTest() {
+
+    @AfterClass
+    public static void driverGuit() {
         driver.quit();
-    }*/
+    }
 
     @Test
     public void checkPagesStatus200() throws IOException, ParseException {

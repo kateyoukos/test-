@@ -27,14 +27,20 @@ public class SignUppPage {
     @FindBy(xpath = "//input[@name='password']")
     public WebElement passwordField;
 
-    @FindBy(xpath = "//button/span[text()='Sign up']")
-    public WebElement signUpButton;
-
-    @FindBy(css = "span.checkbox__icon")
+    @FindBy(css = "label[for=\"agreeLegal\"]")
     public WebElement checkbox;
+
+    @FindBy(id = "react-select-2--value")
+    public WebElement countryList;
+
+    @FindBy(id = "trader-formSubmit-button")
+    public WebElement signUpButton;
 
     @FindBy(xpath = "//span[text()='This field is required.']")
     public List<WebElement> fieldIsNotRequirement;
+
+    @FindBy(css = "input[id=\"email\"]+p")
+    public WebElement errorMsgEmailAlreadyRegistered;
 
     public void getFieldIsNotRequirementError() {
         for (WebElement e : fieldIsNotRequirement) {

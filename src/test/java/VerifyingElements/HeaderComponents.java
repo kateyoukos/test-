@@ -1,9 +1,7 @@
 package VerifyingElements;
 
 import LandingPage.HeaderComponent;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,6 +18,11 @@ public class HeaderComponents {
         driver.manage().window().maximize();
         headerComponent = new LandingPage.HeaderComponent(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+
+    @AfterClass
+    public static void driverGuit() {
+        driver.quit();
     }
 
     @Test
