@@ -32,7 +32,8 @@ public class SignupPageTest {
         wait = new WebDriverWait(driver, 30);
         signUppPage = new SignUppPage(driver);
         newAccPage = new WelcomeToPsyPage(driver);
-        driver.get("https://psyquation.com/");
+        //changed URL
+        driver.get("https://test.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -84,9 +85,9 @@ public class SignupPageTest {
     public void  emailIsAlreadyRegisteredTest() {
         headerComponent.signUp.click();
         wait.until(ExpectedConditions.visibilityOf(signUppPage.emailField));
-        signUppPage.firstName.sendKeys("Ira");
-        signUppPage.lastName.sendKeys("Bilet");
-        signUppPage.emailField.sendKeys("iryna@psyquation.com");
+        signUppPage.firstName.sendKeys("TestName");
+        signUppPage.lastName.sendKeys("TestSurname");
+        signUppPage.emailField.sendKeys("test@psyquation.com");
         signUppPage.passwordField.sendKeys("test123");
         //work with Country drop-down list
         Actions actions = new Actions(driver);
